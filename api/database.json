@@ -1,0 +1,43 @@
+{
+    "users" : [
+       {
+        "id" : 1,
+        "username" : "kelseymcnutt",
+        "email" : "kelseymcnutt@comcast.net"
+       }
+    ],
+    "cards" : [
+        {
+            "id" : 1,
+            "typeId" : 1,
+            "hours" : 2,
+            "price" : 30,
+            "title" : "Paint and Sip",
+            "description" : "Sit accross from each other with a glass of wine and paint portraits of each other."
+        },
+        {
+            "id" : 2,
+            "typeId" : 2,
+            "hours" : 1.5,
+            "price" : 0,
+            "title" : "Photography walk",
+            "description" : "Go on a scenic walk in nature or through your city and capture interesting sights"
+        }
+    ], 
+    "types" : [
+        {
+            "id" : 1,
+            "type" : "couple"
+        },
+        {
+            "id" : 2,
+            "type" : "solo"
+        },
+        {
+            "id" : 3,
+            "type" : "friendship"
+        }
+    ]
+}
+
+
