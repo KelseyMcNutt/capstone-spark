@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  background-color: var(--dark);
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: black 2px solid;
+  }
+  .navbar-item {
+    list-style-type: none;
+    text-align: center;
+    color: var(--offWhite);
+    margin-bottom: 10px;
+  }
+  .card-post {
+    display: flex;
+    
+  }
+
+  .cards {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
