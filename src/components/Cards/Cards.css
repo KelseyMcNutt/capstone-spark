@@ -1,0 +1,30 @@
+.card {
+   margin: 20px;
+    border: 1px black solid;
+    flex-basis: 33%;
+    padding: 20px;
+}
+
+.all-cards {
+    display: flex;
+    margin: 20px;
+  
+}
+
+.footer {
+    display:flex;
+    margin-top: 25px;
+}
+
+.card-type {
+    display: flex;
+    text-align: right;
+}
+
+.card-hours {
+    margin-right: 45px;
+    margin-left: 20px;
+}
+.card-price {
+    margin-left: 45px;
+}

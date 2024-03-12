@@ -22,6 +22,14 @@
             "price" : 0,
             "title" : "Photography walk",
             "description" : "Go on a scenic walk in nature or through your city and capture interesting sights"
+        },
+        {
+            "id" : 3,
+            "typeId" : 3,
+            "hours" : 3,
+            "price" : 40,
+            "title" : "Cooking Competition",
+            "description" : "Split into teams, set a 5 minute timer to get ingredients at store, and then go home and have a cook off."
         }
     ], 
     "types" : [
