@@ -1,0 +1,91 @@
+
+
+.userInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    flex-direction: column;
+    height: 20vw;
+   
+  }
+  
+  .top {
+    display: flex;
+    align-items: flex-start;
+    border: 1px dotted blue;
+    justify-content: space-around;
+  }
+  
+  .back { 
+     margin-right: auto; 
+  }
+  
+  .edit,
+  .logout {
+    margin-right: 10px; 
+   text-decoration: underline;
+
+  }
+  
+  .profileInfo {
+    text-align: center;
+   
+  }
+  
+  .username {
+    font-size: 24px; 
+  }
+  
+  
+  
+  .favorites,
+  .datesTaken {
+    text-align: center;
+    font-size: 14px; 
+    margin-left: 20px;
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px dotted blue;
+  }
+
+  .middle {
+    border: 1px dotted blue;
+  }
+
+
+  .username {
+    margin-left: 100px; /* Adjust margin as needed */
+  }
+  
+  .title,
+  .picture,
+  .description,
+  .date {
+    text-align: center;
+    width: 100%; /* Ensure content is centered */
+  }
+  
+  .picture{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: black 1px solid;
+  }
+
+  .Posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Occupy full height */
+    width: 33%; /* Set the width to 33% of the viewport width */
+    padding: 20px;
+    border: 2px solid black; /* Border below the URL and username */
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  

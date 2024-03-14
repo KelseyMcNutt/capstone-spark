@@ -1,0 +1,8 @@
+.favs {
+    display: flex;
+    
+}
+
+.fav {
+    width: 33%;
+}
