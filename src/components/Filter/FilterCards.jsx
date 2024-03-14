@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { getAllTypes } from "../../services/FIlterServices"
-import { getAllCards } from "../../services/CardsService"
+import './FilterCards.css'
 
-export const FilterBar = ({setFilteredCardsType, setFilteredCardsPrice}) => {
+
+export const FilterBar = ({setFilteredCardsType, setFilteredCardsPrice, setFilteredCardsLength}) => {
     const [types, setTypes] = useState([])
    
 
@@ -23,10 +24,19 @@ export const FilterBar = ({setFilteredCardsType, setFilteredCardsPrice}) => {
 
     }
 
+    const handleLengthChange = (event) => {
+        const selectedLength = event.target.value
+        setFilteredCardsLength(selectedLength)
+    }
+
     
     return (
+       <div className="filter-withtitle">
+        <h3>Filter By</h3> 
         <div className="filter">
-            <label></label>
+            
+        
+        <label></label>
        <select className="types" onChange={handleTypeChange} >
        <option value="" className="type">All Types</option>
             {types.map((type) => {
@@ -35,6 +45,8 @@ export const FilterBar = ({setFilteredCardsType, setFilteredCardsPrice}) => {
                 )
             })}
         </select>
+   
+        
         <label></label>
        <select className="prices" onChange={handlePriceChange}>
        <option value="" className="price">All Prices</option>
@@ -44,6 +56,15 @@ export const FilterBar = ({setFilteredCardsType, setFilteredCardsPrice}) => {
         <option value={100}>$100 and under</option>
         <option value={200}>$200 and under</option>
         </select>
+    
+        <label></label>
+       <select className="lengths" onChange={handleLengthChange}>
+       <option value="" className="length">All Lengths</option>
+        <option value={2}>2 hours and under</option>
+        <option value={3}>3 hours and under</option>
+        <option value={4}>4 hours and under</option>
+        </select>
+        </div>
         </div>
     )
 }

@@ -1,0 +1,46 @@
+.Posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Occupy full height */
+    width: 33vw; /* Set the width to 33% of the viewport width */
+    padding: 20px;
+    border: 2px solid black; /* Border below the URL and username */
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black; /* Border below the URL and username */
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .profilePic {
+    /* Your styles for profile picture */
+  }
+  
+  .username {
+    margin-left: 100px; /* Adjust margin as needed */
+  }
+  
+  .title,
+  .picture,
+  .description,
+  .date {
+    text-align: center;
+    width: 100%; /* Ensure content is centered */
+  }
+  
+  .picture{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: black 1px solid;
+  }
+
+  .post {
+    /* margin-top: 40px; */
+  }

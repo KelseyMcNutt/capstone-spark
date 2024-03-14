@@ -1,17 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import { Cards } from './components/Cards/Cards'
-import { NavBar } from './components/NavBar/NavBar'
+import { Route, Routes } from "react-router-dom"
+import { Login } from "./components/auth/Login"
+import { Register } from "./components/auth/Register"
+import { Authorized } from "./views/Authorized"
+import { ApplicationViews } from "./views/ApplicationViews"
 
-function App() {
-  
-
+export const App = () => {
   return (
-    <>
-    <NavBar/>
-     <Cards/>
-    </>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route
+        path="*"
+        element={
+          <Authorized>
+            <ApplicationViews />
+          </Authorized>
+        }
+      />
+    </Routes>
   )
 }
 
-export default App
+
