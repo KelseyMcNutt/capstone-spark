@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { Posts } from "../components/Posts/Posts"
 import { ProfilePage } from "../components/profile/ProfilePage"
 import { Favs } from "../components/favs/Favs"
+import { Details } from "../components/Details/Details"
 
 
 
@@ -43,11 +44,14 @@ export const ApplicationViews = () => {
 
       <Route path="profile">
         <Route index element={<ProfilePage currentUser={currentUser}/>} />
+        <Route path=":postId" element={<Details currentUser={currentUser}/>} />
       </Route>
 
       <Route path="favorites">
         <Route index element={<Favs currentUser={currentUser}/>} />
       </Route>
+
+  
 
     </Routes>
   )

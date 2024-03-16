@@ -53,7 +53,14 @@
       "userId": 1,
       "cardId": 2,
       "date": "March 12, 2024",
-      "picture": "URL"
+      "picture": "https://live.staticflickr.com/65535/49886357618_b0e576c187_c.jpg"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "cardId": 2,
+      "date": "March 12, 2024",
+      "picture": "https://live.staticflickr.com/65535/49886357618_b0e576c187_c.jpg"
     }
   ],
   "favorites": [

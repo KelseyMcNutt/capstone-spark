@@ -31,9 +31,7 @@ export const Posts = () => {
              <div className="title">
                 {post.card.title}
              </div>
-             <div className="picture">
-                {post.picture}
-             </div>
+             <img src={post.picture} alt="Post" className="picture" />
              <div className="description">
                 {post.card.description}
              </div>
