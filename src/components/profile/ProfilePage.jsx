@@ -29,17 +29,18 @@ export const ProfilePage = ({currentUser}) => {
         <header className="userInfo">
             <div className="top">
             <Link to="/posts"><div className="back">Back</div></Link>
-            <div className="edit">edit</div>
+            <Link to="/edit"><div className="edit">edit</div></Link>
             <Link to="/login"><div className="logout">logout</div></Link>
             </div>
             
             <div className="middle">
-            <div className="profilePic">{profileInfo?.profilePic}</div>
-            <div className="username">{profileInfo?.username}</div>
+                <img className="profilePic" src={profileInfo?.profilePic} alt="profilepic"/>
+                <div className="username">{profileInfo?.username}</div>
+
             </div>
             
             <div className="bottom">
-            <div className="newPost">+++</div>
+            <Link to="/newpost"><div className="newPost">+++</div></Link>
             <Link to="/favorites"><div className="favorites">favorites</div></Link>
             <div className="datesTaken">Dates Taken: {userPosts.length}</div>
             </div>
@@ -47,8 +48,9 @@ export const ProfilePage = ({currentUser}) => {
             <div className="Posts">
             {userPosts.map((posts) => {
                 return(
+            <div key={posts.id}>
             <Link to={`/profile/${posts.id}`}>
-           <div key={posts.id}>
+           
            
             <div className="post">
             <div className="title">
@@ -63,12 +65,12 @@ export const ProfilePage = ({currentUser}) => {
              </div>
              </div>
              
-             </div>
              </Link>
+             </div>
             )
             })}
             </div>
             
-        // </div>
+        </div>
     )
 }

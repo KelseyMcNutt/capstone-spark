@@ -7,6 +7,8 @@ import { Posts } from "../components/Posts/Posts"
 import { ProfilePage } from "../components/profile/ProfilePage"
 import { Favs } from "../components/favs/Favs"
 import { Details } from "../components/Details/Details"
+import { EditProfile } from "../components/EditProfile/EditProfile"
+import { NewPost } from "../components/newPost/NewPost"
 
 
 
@@ -49,6 +51,14 @@ export const ApplicationViews = () => {
 
       <Route path="favorites">
         <Route index element={<Favs currentUser={currentUser}/>} />
+      </Route>
+
+      <Route path="edit">
+        <Route index element={<EditProfile currentUser={currentUser}/>} />
+      </Route>
+
+      <Route path="newpost">
+        <Route index element={<NewPost currentUser={currentUser}/>} />
       </Route>
 
   
