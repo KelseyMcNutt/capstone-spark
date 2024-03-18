@@ -1,36 +1,64 @@
+
 import { useParams } from "react-router-dom"
-import { getDetailsByPostId } from "../../services/DetailsServices"
+import { getDetailsByPostId, updatePost } from "../../services/DetailsServices"
 import { useEffect, useState } from "react"
 import { deletePost } from "../../services/DetailsServices"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export const Details = () => {
     const [details, setDetails] = useState({})
-    const {postId} = useParams()
-   
-    
+    const [newDate, setNewDate] = useState('')
+    const { postId } = useParams()
+
+    const navigate = useNavigate()
+
     useEffect(() => {
         getDetailsByPostId(postId).then((data) => {
             const detail = data[0]
             setDetails(detail)
-        })
-    }, [postId])
-    console.log(postId)
+            setNewDate(detail.date)
+        });
+    }, [postId]);
 
-    const handleDelete = async (event) => {
-        await deletePost(event.target.value)
-
+    const handleDelete = (event) => {
+        deletePost(event.target.value)
+        navigate('/profile')
     }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+     
+        const updatedPost = { ...details, date: newDate }
     
+        updatePost(updatedPost)
+            .then(() => {
+                console.log("Post updated successfully")
+            })
+
+            navigate('/profile')
+        
+            
+    }
+
     return (
         <div className="Posts">
-                   <>
-                    <Link to="/profile"><button value={details.id} onClick={handleDelete}>trash</button></Link>
-                    <div className="title">{details.card?.title}</div>
-                    <img src={details.picture} alt="Post" className="picture" />
-                    <div className="desciption">{details.card?.description}</div>
-                    <div className="date">{details.date}</div>
-                    </>
+            <>
+                <button value={details.id} onClick={handleDelete}>trash</button>
+                <div className="title">{details.card?.title}</div>
+                <img src={details.picture} alt="Post" className="picture" />
+                <div className="description">{details.card?.description}</div>
+                <form onSubmit={handleSubmit}>
+                    <fieldset>
+                        <input 
+                            type="text" 
+                            value={newDate} 
+                            onChange={(e) => setNewDate(e.target.value)} 
+                            required 
+                        />
+                        <button type="submit">Update Date</button>
+                    </fieldset>
+                </form>
+            </>
         </div>
-    )
-}
+    );
+};
