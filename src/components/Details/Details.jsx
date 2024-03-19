@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 
 export const Details = () => {
     const [details, setDetails] = useState({})
-    const [newDate, setNewDate] = useState('')
+    const [newDate, setNewDate] = useState("")
     const { postId } = useParams()
 
     const navigate = useNavigate()
@@ -28,7 +28,13 @@ export const Details = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
      
-        const updatedPost = { ...details, date: newDate }
+        const updatedPost = {
+            id: details.id,
+            date: newDate,
+            picture: details.picture,
+            cardId: details.cardId,
+            userId: details.userId 
+        }
     
         updatePost(updatedPost)
             .then(() => {
