@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MakeNewPost } from "../../services/PostsServices"
 import { useNavigate } from "react-router-dom"
+import { getFavoritesByUserId } from "../../services/FavoritesServices"
 
 export const NewPost = ({currentUser}) => {
   const navigate = useNavigate()
@@ -8,14 +9,31 @@ export const NewPost = ({currentUser}) => {
   const [formData, setFormData] = useState({
     userId: currentUser.id,
     cardId: "",
-    pictureUrl: "",
+    picture: "",
     date: "",
   })
 
+  const [favorites, setFavorites] = useState([])
+
+
+useEffect(() => {
+    getFavoritesByUserId(currentUser.id).then((favorites) => {
+        setFavorites(favorites)
+    })
+}, [currentUser])
+
+
   const handleChange = (event) => {
     const { name, value } = event.target
-    setFormData({ ...formData, [name]: value })
+    if (name === "cardId") {
+        const selectedCardId = parseInt(value)
+        const selectedFavorite = favorites.length > 0 ? favorites.find((favorite) => favorite.cardId === selectedCardId) : null
+        const card = selectedFavorite ? selectedFavorite.card : null
+    setFormData({ ...formData, [name]: selectedCardId, card: card })
+  } else {
+    setFormData({ ...formData, [name]: value, card: formData.card})
   }
+}
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -23,27 +41,45 @@ export const NewPost = ({currentUser}) => {
       navigate("/profile")
   }
 
+  const previewPost = (
+    <div className="post-preview">
+      <h2>Post Preview</h2>
+      <div className="post">
+      <h3>{formData.card?.title}</h3>
+      <p>{formData.card?.description}</p>
+        <img src={formData.picture} alt="Post" className="picture-preview" />
+        <p>Date: {formData.date}</p>
+      </div>
+    </div>
+  )
+
   return (
     <div className="new-post-form">
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="cardId">Card ID:</label>
-          <input
-            type="text"
+          <label htmlFor="cardId">Card Title:</label>
+          <select
             id="cardId"
             name="cardId"
             value={formData.cardId}
             onChange={handleChange}
             required
-          />
+          >
+            <option value="">Select a card</option>
+            {favorites.map((favorite) => (
+              <option key={favorite.id} value={favorite.cardId}>
+                {favorite.card.title}
+              </option>
+            ))}
+          </select>
         </div>
         <div>
           <label htmlFor="pictureUrl">Picture URL:</label>
           <input
             type="text"
             id="pictureUrl"
-            name="pictureUrl"
-            value={formData.pictureUrl}
+            name="picture"
+            value={formData.picture}
             onChange={handleChange}
             required
           />
@@ -61,6 +97,7 @@ export const NewPost = ({currentUser}) => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      {previewPost}
     </div>
   )
 }

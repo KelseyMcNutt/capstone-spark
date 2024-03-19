@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getProfileInfo, updateProfile } from "../../services/ProfileServices"
+import { getSimpleProfileInfo, updateProfile } from "../../services/ProfileServices"
 import { useNavigate } from "react-router-dom"
 
 export const EditProfile = ({ currentUser }) => {
@@ -13,26 +13,23 @@ const navigate = useNavigate()
 
     useEffect(() => {
         if (currentUser?.id) {
-            getProfileInfo(currentUser.id).then((data) => {
-                const profileObj = data[0]
-                setProfileInfo(profileObj)
-            });
+            getSimpleProfileInfo(currentUser.id).then((data) => {
+            setProfileInfo(data)
+            })
         }
-    }, [currentUser]);
+    }, [currentUser])
 
     const handleChange = (e) => {
         const { name, value } = e.target
         setProfileInfo({
             ...profileInfo,
             [name]: value
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        updateProfile(currentUser.id, profileInfo).then(() => {
-        
         })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await updateProfile(profileInfo)
         navigate('/profile')
 
     }
@@ -74,5 +71,5 @@ const navigate = useNavigate()
                 <button type="submit">Save</button>
             </form>
         </div>
-    );
-};
+    )
+}
