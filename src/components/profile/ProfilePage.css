@@ -7,7 +7,7 @@
     padding: 10px;
     width: 100vw;
     flex-direction: column;
-    height: 20vw;
+    height: 120px;
    
   }
   
@@ -26,11 +26,18 @@
 
 
   }
+
+  .profilePic{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
   
   .newPost {
     position: absolute;
     right: 0;
     margin-right: 50px;
+    font-size: ;
   }
 
   .logout {
@@ -54,6 +61,7 @@
   
   .username {
     font-size: 32px; 
+    margin-right: 130px;
   }
   
   
@@ -72,7 +80,7 @@
   }
 
   .middle {
-    /* border: 1px dotted blue; */
+   display: flex;
   }
 
 
@@ -88,9 +96,15 @@
     width: 100%; /* Ensure content is centered */
   }
   
+.title{
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
   .picture{
    
     border: black 1px solid;
+    margin-bottom: 30px;
   }
 
   .Posts {
@@ -103,6 +117,11 @@
  
   }
 
+.date {
+
+  
+}
+
   .post{
     margin-bottom: 20px;
     border: 2px solid black; 
@@ -110,7 +129,7 @@
     margin-top: 40px;
     margin-left: 20px;
     padding: 20px;
-    height: 90%; 
+    height: 430px; 
    
   }
   

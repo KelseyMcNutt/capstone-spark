@@ -5,6 +5,12 @@
       "email": "kelseymcnutt@comcast.net",
       "username": "kelseymcnutty",
       "profilePic": "https://dogtime.com/wp-content/uploads/sites/12/gallery/jack-russell-terrier-puppies/jack-russell-terrier-puppy-14.jpg"
+    },
+    {
+      "email": "bree@bree.com",
+      "fullName": "Bree",
+      "cohort": 69,
+      "id": 2
     }
   ],
   "cards": [
@@ -71,11 +77,6 @@
     }
   ],
   "favorites": [
-    {
-      "userId": 1,
-      "cardId": 1,
-      "id": 1
-    },
     {
       "userId": 1,
       "cardId": 2,
