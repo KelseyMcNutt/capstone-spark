@@ -21,10 +21,10 @@ export const Posts = () => {
             return(
              <div className="post">
                 <header>
-                    <div className="profilePic">
+                    <div className="profilePicPost">
                     <img src={post.user.profilePic} alt="profilePicture" className="profilePicture" />
                     </div>
-                    <div className="username">
+                    <div className="username-post">
                     {post.user.username}
                     </div>
                 </header>  
