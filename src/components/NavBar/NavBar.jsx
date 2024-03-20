@@ -1,7 +1,21 @@
 import './NavBar.css'
 import { Link } from 'react-router-dom'
+import { getSimpleProfileInfo } from '../../services/ProfileServices'
+import { useEffect, useState } from 'react'
 
-export const NavBar = () => {
+
+
+export const NavBar = ({currentUser}) => {
+
+const [profileInfo, setProfileInfo] = useState({})
+
+useEffect(() => {
+    getSimpleProfileInfo(currentUser.id).then((info) => {
+        setProfileInfo(info)
+    })
+}, [currentUser])
+
+
 return (
     <>
     <ul className='navbar'>
@@ -10,7 +24,7 @@ return (
         <Link to='/posts'><li className='navbar-item posts'>Posts</li></Link>
         </div>
         <div className='logo-div'><li className='navbar-item logo'><h2>Spark</h2></li></div>
-        <Link to='/profile'><li className='navbar-item propic'>Profile Pic</li></Link>
+        <Link to='/profile'><li className='navbar-item propic'><img className="propic" src={profileInfo.profilePic} alt="profile pic"/></li></Link>
 
     </ul>
     </>

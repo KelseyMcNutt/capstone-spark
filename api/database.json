@@ -50,34 +50,41 @@
   "posts": [
     {
       "id": 1,
-      "date": "March 16, 2024",
+      "date": "March 15, 2024",
       "picture": "https://live.staticflickr.com/65535/49886357618_b0e576c187_c.jpg",
       "cardId": 2,
       "userId": 1
     },
     {
       "id": 2,
-      "date": "March 5, 2024",
+      "date": "March 6, 2024",
       "picture": "https://cms.accuweather.com/wp-content/uploads/2017/05/sunset.jpg?w=1024",
       "cardId": "2",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "date": "March 19, 2024",
+      "picture": "https://hips.hearstapps.com/hmg-prod/images/stocksy-txp7516161ajch100-medium-1181867-1508525551.jpg",
+      "cardId": 3,
       "userId": 1
     }
   ],
   "favorites": [
     {
       "userId": 1,
+      "cardId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
       "cardId": 2,
-      "id": 9
+      "id": 2
     },
     {
       "userId": 1,
       "cardId": 3,
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "cardId": 1,
-      "id": 11
+      "id": 3
     }
   ]
 }

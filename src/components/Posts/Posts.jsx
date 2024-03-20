@@ -20,24 +20,24 @@ export const Posts = () => {
         {allPosts.map((post)=> {
             return(
              <div className="post">
-             <header>
-                <div className="profilePic">
-                    {post.user.profilePic}
-                </div>
-                <div className="username">
+                <header>
+                    <div className="profilePic">
+                    <img src={post.user.profilePic} alt="profilePicture" className="profilePicture" />
+                    </div>
+                    <div className="username">
                     {post.user.username}
+                    </div>
+                </header>  
+                <div className="title">
+                    {post.card.title}
                 </div>
-             </header>  
-             <div className="title">
-                {post.card.title}
-             </div>
-             <img src={post.picture} alt="Post" className="picture" />
-             <div className="description">
-                {post.card.description}
-             </div>
-             <div className="date">
-                {post.date}
-             </div>
+                <img src={post.picture} alt="Post" className="picture" />
+                <div className="description">
+                    {post.card.description}
+                </div>
+                <div className="date">
+                    {post.date}
+                </div>
              </div>
             
     
