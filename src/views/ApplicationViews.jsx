@@ -30,7 +30,7 @@ export const ApplicationViews = () => {
 
       <Route path="/" element={
               <>
-              <NavBar/>
+              <NavBar currentUser={currentUser}/>
               <Outlet/>
               </>
             } >

@@ -9,19 +9,16 @@
 .picture{
   padding-top: 60px;
   padding-bottom: 60px;
-  border: black 1px solid;
+  
 }
 
-.Posts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%; /* Occupy full height */
-  width: 33%; /* Set the width to 33% of the viewport width */
-  padding: 20px;
-  border: 2px solid black; /* Border below the URL and username */
-  margin-top: 40px;
-  margin-left: 20px;
+.post {
+    margin-bottom: 20px;
+    border: 2px solid black; 
+    width: 33vw; 
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 20px;
+    height: 100%; 
   
 }

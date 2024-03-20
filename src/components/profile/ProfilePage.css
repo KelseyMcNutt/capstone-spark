@@ -11,22 +11,40 @@
    
   }
   
-  .top {
+  /* .top {
     display: flex;
     align-items: flex-start;
-    border: 1px dotted blue;
     justify-content: space-around;
-  }
+  } */
   
   .back { 
-     margin-right: auto; 
+  
+     position: absolute;
+     left: 0;
+     margin-left: 30px;
+
+
+
   }
   
-  .edit,
+  .newPost {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+  }
+
   .logout {
     margin-right: 10px; 
-   text-decoration: underline;
+   text-decoration: none;
+   position:absolute;
+   right:0;
 
+  }
+
+  .edit{
+    position:absolute;
+   right:0;
+   margin-right:70px;
   }
   
   .profileInfo {
@@ -35,7 +53,7 @@
   }
   
   .username {
-    font-size: 24px; 
+    font-size: 32px; 
   }
   
   
@@ -50,11 +68,11 @@
   .bottom {
     display: flex;
     flex-direction: row-reverse;
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
   }
 
   .middle {
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
   }
 
 
@@ -71,23 +89,29 @@
   }
   
   .picture{
-    padding-top: 60px;
-    padding-bottom: 60px;
+   
     border: black 1px solid;
   }
 
   .Posts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%; /* Occupy full height */
-    width: 33%; /* Set the width to 33% of the viewport width */
-    padding: 20px;
-    border: 2px solid black; /* Border below the URL and username */
+    flex-direction: row; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+ 
+ 
+  }
+
+  .post{
+    margin-bottom: 20px;
+    border: 2px solid black; 
+    width: 25vw; 
     margin-top: 40px;
     margin-left: 20px;
-    
+    padding: 20px;
+    height: 90%; 
+   
   }
   
   .profilePic {

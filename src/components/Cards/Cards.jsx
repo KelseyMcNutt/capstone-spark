@@ -85,8 +85,12 @@ export const Cards = ({currentUser}) => {
         {filteredCards.map((card) => {
             return (
                 <div className="card" key={card.id}>
+                    
+                    <div className="card-top">
                     <div className="card-type">{card.type.type}</div>
                     <button onClick={() => handleLike(card.id)}>Save</button>
+                    </div>
+                    
                     <div className="card-title"><h3>{card.title}</h3></div>
                     <div className="card-description">{card. description}</div>
                     <footer className="footer">

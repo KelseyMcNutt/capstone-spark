@@ -47,7 +47,7 @@ export const Details = () => {
     }
 
     return (
-        <div className="Posts">
+        <div className="post">
             <>
                 <button value={details.id} onClick={handleDelete}>trash</button>
                 <div className="title">{details.card?.title}</div>

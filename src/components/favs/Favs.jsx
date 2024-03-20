@@ -53,8 +53,12 @@ export const Favs = ({currentUser}) => {
                 return (
                     // <div key={fav.id}>
                     <div className="card" key={fav.card.id}>
-                    <div className="card-type">{favCardType}</div>
-                    <button value={fav.id} onClick={handleDelete}>Trash</button>
+                        
+                    <div className="fav-top">
+                        <div className="card-type">{favCardType}</div>
+                        <button value={fav.id} onClick={handleDelete}>Trash</button>
+                    </div>
+
                     <div className="card-title"><h3>{fav.card.title}</h3></div>
                     <div className="card-description">{fav.card.description}</div>
                     <footer className="footer">
