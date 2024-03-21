@@ -29,10 +29,11 @@ export const Login = () => {
   }
 
   return (
-    <main className="auth-container">
+  <div className="background">
+  <main className="auth-container" style={{backgroundImage: `url(https://garden.spoonflower.com/c/14662424/p/f/m/rhTG9U3MqzDPNo3bEsZZw6MFpX5dAelDyfZFUWGBaXYeOPzWykxiEqI/Yellow%20regular%20star%20print%20on%20white%20-%20large.jpg)`}}>
       <section>
         <form className="auth-form" onSubmit={handleLogin}>
-          <h1 className="header">Spark</h1>
+          <h1 className="header">spark</h1>
           <h2>Please sign in</h2>
           <fieldset className="auth-fieldset">
             <div>
@@ -55,9 +56,10 @@ export const Login = () => {
         </form>
       </section>
       <section className="register-link">
-        <Link to="/register">Not a member yet?</Link>
+        <Link to="/register" style={{ color: "black" }}>Not a member yet?</Link>
       </section>
     </main>
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { getSimpleProfileInfo, updateProfile } from "../../services/ProfileServices"
 import { useNavigate } from "react-router-dom"
+import './EditProfile.css'
 
 export const EditProfile = ({ currentUser }) => {
     const [profileInfo, setProfileInfo] = useState({
@@ -35,7 +36,7 @@ const navigate = useNavigate()
     }
 
     return (
-        <div className="editForm">
+        <div className="editForm" style={{backgroundImage: `url(https://garden.spoonflower.com/c/15892452/p/f/m/8hBuW508PLSTu2qODd0bzxFJDgYj1JCGZQf11vRsqmXZ695ETKe_/Yellow%20stars.jpg)`}} >
             <h2>Edit Profile</h2>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -44,6 +45,7 @@ const navigate = useNavigate()
                         type="text" 
                         id="profilePic" 
                         name="profilePic" 
+                        className="pic-edit"
                         value={profileInfo.profilePic} 
                         onChange={handleChange} 
                     />
@@ -54,6 +56,7 @@ const navigate = useNavigate()
                         type="text" 
                         id="username" 
                         name="username" 
+                        className="name-edit"
                         value={profileInfo.username} 
                         onChange={handleChange} 
                     />
@@ -64,11 +67,14 @@ const navigate = useNavigate()
                         type="email" 
                         id="email" 
                         name="email" 
+                        className="email-edit"
                         value={profileInfo.email} 
                         onChange={handleChange} 
                     />
                 </div>
+                <div className="btn-container">
                 <button type="submit">Save</button>
+                </div>
             </form>
         </div>
     )

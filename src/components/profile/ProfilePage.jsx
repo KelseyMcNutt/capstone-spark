@@ -3,6 +3,7 @@ import { getProfileInfo } from "../../services/ProfileServices"
 import { getPostsbyUserId } from "../../services/ProfileServices"
 import './ProfilePage.css'
 import { Link } from "react-router-dom"
+import { FaArrowLeft } from "react-icons/fa"
 
 
 export const ProfilePage = ({currentUser}) => {
@@ -28,9 +29,9 @@ export const ProfilePage = ({currentUser}) => {
         <div className="profile">
         <header className="userInfo">
             <div className="top">
-            <Link to="/posts"><div className="back">Back</div></Link>
-            <Link to="/edit"><div className="edit">edit</div></Link>
-            <Link to="/login"><div className="logout">logout</div></Link>
+            <Link to="/posts"><div className="back"><FaArrowLeft /></div></Link>
+            <Link to="/edit"><div className="edit">Edit</div></Link>
+            <Link to="/login"><div className="logout">Logout</div></Link>
             </div>
             
             <div className="middle">
@@ -40,8 +41,8 @@ export const ProfilePage = ({currentUser}) => {
             </div>
             
             <div className="bottom">
-            <Link to="/newpost"><div className="newPost">+++</div></Link>
-            <Link to="/favorites"><div className="favorites">favorites</div></Link>
+            <Link to="/newpost"><div className="newPost">+</div></Link>
+            <Link to="/favorites"><div className="favorites">Favorites</div></Link>
             <div className="datesTaken">Dates Taken: {userPosts.length}</div>
             </div>
        </header>
@@ -52,7 +53,7 @@ export const ProfilePage = ({currentUser}) => {
             <Link to={`/profile/${posts.id}`}>
            
            
-            <div className="post">
+            <div className="post" >
             <div className="title">
                 {posts.card?.title}
              </div>

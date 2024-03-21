@@ -4,6 +4,9 @@ import { getDetailsByPostId, updatePost } from "../../services/DetailsServices"
 import { useEffect, useState } from "react"
 import { deletePost } from "../../services/DetailsServices"
 import { useNavigate } from "react-router-dom"
+import './Details.css'
+import { IoTrash } from "react-icons/io5"
+
 
 export const Details = () => {
     const [details, setDetails] = useState({})
@@ -47,9 +50,10 @@ export const Details = () => {
     }
 
     return (
-        <div className="post">
+        <div className="container">
+       <div className="post-details">
             <>
-                <button value={details.id} onClick={handleDelete}>trash</button>
+                <button value={details.id} onClick={handleDelete}><IoTrash /></button>
                 <div className="title">{details.card?.title}</div>
                 <img src={details.picture} alt="Post" className="picture" />
                 <div className="description">{details.card?.description}</div>
@@ -66,5 +70,7 @@ export const Details = () => {
                 </form>
             </>
         </div>
-    );
-};
+        </div>
+
+    )
+}

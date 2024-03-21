@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { getFavoritesByUserId } from "../../services/FavoritesServices"
 import './newPost.css'
 import { Link } from "react-router-dom"
+import { FaArrowLeft } from "react-icons/fa"
 
 export const NewPost = ({currentUser}) => {
   const navigate = useNavigate()
@@ -57,7 +58,7 @@ useEffect(() => {
 
   return (
     <>
-    <Link to="/profile"><div>back</div></Link>
+    <Link to="/profile"><div><FaArrowLeft /></div></Link>
     <div className="new-post-form">
       
       <div className="form">
@@ -93,7 +94,7 @@ useEffect(() => {
             <div>
             <label htmlFor="date">Date:</label>
             <input
-                type="date"
+                type="text"
                 id="date"
                 name="date"
                 value={formData.date}

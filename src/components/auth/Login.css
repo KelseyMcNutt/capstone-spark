@@ -1,12 +1,22 @@
 .auth-container {
-    border: 1px solid gray;
-    margin: 3rem 15rem;
+    border: 2px solid gray;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 2%;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+
   }
   
   .header {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
   }
   
   .auth-form {
@@ -16,14 +26,20 @@
   }
   
   .auth-form-input {
-    padding: 0.25rem;
+    padding: 3px;
   }
   
   .register-link {
     text-align: center;
+    text-decoration: underline;
+   
   }
   
   .auth-fieldset {
     margin: 0.25rem 0rem;
+  }
+
+body {
+    background-color: rgb(248, 237, 237);
   }
   
