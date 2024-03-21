@@ -1,13 +1,27 @@
 .favs {
     display: flex;
     
+    
 }
 
-.fav {
+/* .fav {
     width: 33%;
-}
+} */
 
 .fav-top {
     display: flex;
     justify-content: space-between;
 }
+
+.card {
+    width: 300px;
+
+
+    
+}
+
+.back-link {
+    color: black;
+    
+}
+

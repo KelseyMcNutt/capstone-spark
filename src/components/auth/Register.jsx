@@ -6,15 +6,15 @@ import { createUser, getUserByEmail } from "../../services/userService"
 export const Register = (props) => {
   const [user, setUser] = useState({
     email: "",
-    fullName: "",
-    cohort: 0,
+    username: "",
+    profilePic: "",
   })
   let navigate = useNavigate()
 
   const registerNewUser = () => {
     const newUser = {
       ...user,
-      cohort: parseInt(user.cohort),
+      profilePic: (user.profilePic),
     }
 
     createUser(newUser).then((createdUser) => {
@@ -23,7 +23,7 @@ export const Register = (props) => {
           "learning_user",
           JSON.stringify({
             id: createdUser.id,
-            staff: createdUser.isStaff,
+            
           })
         )
 
@@ -52,18 +52,18 @@ export const Register = (props) => {
   }
 
   return (
-    <main className="auth-container">
+    <main className="auth-container" style={{backgroundImage: `url(https://garden.spoonflower.com/c/14662424/p/f/m/rhTG9U3MqzDPNo3bEsZZw6MFpX5dAelDyfZFUWGBaXYeOPzWykxiEqI/Yellow%20regular%20star%20print%20on%20white%20-%20large.jpg)`}}>
       <form className="auth-form" onSubmit={handleRegister}>
-        <h1 className="header">Learning Moments</h1>
+        <h1 className="header">spark</h1>
         <h2>Please Register</h2>
         <fieldset className="auth-fieldset">
           <div>
             <input
               onChange={updateUser}
               type="text"
-              id="fullName"
+              id="username"
               className="auth-form-input"
-              placeholder="Enter your name"
+              placeholder="Enter Username"
               required
               autoFocus
             />
@@ -85,10 +85,10 @@ export const Register = (props) => {
           <div>
             <input
               onChange={updateUser}
-              type="number"
-              id="cohort"
+              type="text"
+              id="profilePic"
               className="auth-form-input"
-              placeholder="Cohort #"
+              placeholder="Profile Pic Url"
               required
             />
           </div>

@@ -1,0 +1,29 @@
+.editForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+      
+}
+
+.pic-edit {
+    margin: 15px;
+}
+
+.name-edit {
+    margin: 15px;
+}
+
+.email-edit {
+    margin: 15px;
+}
+
+.btn-container {
+    text-align: center;
+}

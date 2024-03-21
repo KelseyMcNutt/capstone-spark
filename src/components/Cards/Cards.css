@@ -1,13 +1,14 @@
 .card {
    margin: 20px;
     border: 1px black solid;
-    flex-basis: 33%;
+    flex-basis: 26%;
     padding: 20px;
 }
 
 .all-cards {
     display: flex;
     margin: 20px;
+    flex-wrap: wrap;
   
 }
 
