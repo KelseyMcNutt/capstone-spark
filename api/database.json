@@ -3,7 +3,7 @@
     {
       "id": 1,
       "email": "kelseymcnutt@comcast.net",
-      "username": "kelseymcnutty",
+      "username": "kelseymcnutt",
       "profilePic": "https://images.squarespace-cdn.com/content/v1/624da83e75ca872f189ffa42/1651685443937-OCK49KC9UCLJTX4VFD5N/Floral%2BStudio%2BDisco%2BBall%2B8x10.jpg?format=1500w"
     },
     {
@@ -29,6 +29,12 @@
       "username": "bellebelle",
       "profilePic": "https://www.cascadefloralwholesale.com/wp-content/uploads/2022/01/pink-carnation-flower-1024x1024.jpg",
       "id": 5
+    },
+    {
+      "id": 6,
+      "email": "prince@prince.com",
+      "username": "prince",
+      "profilePic": "https://media.istockphoto.com/id/92883709/photo/a-golden-crown-with-ten-points.jpg?s=612x612&w=0&k=20&c=wqVwp_A5cgJ3Gr7-27i99kVt6el9aezyXAOj5zT0Zxc="
     }
   ],
   "cards": [
@@ -493,21 +499,6 @@
       "userId": 4
     },
     {
-      "userId": 1,
-      "cardId": 30,
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuD5bdq2uuqHHRqvf2jScMdtvq8ROaOIAyPg&usqp=CAU",
-      "date": "March 20, 2024",
-      "card": {
-        "id": 30,
-        "typeId": 1,
-        "hours": 2,
-        "price": 15,
-        "title": "Arcade Night",
-        "description": "Go to an arcade and see who can win the better prize."
-      },
-      "id": 18
-    },
-    {
       "userId": 4,
       "cardId": 2,
       "picture": "https://images.unsplash.com/photo-1462216589242-9e3e00a47a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D",
@@ -539,18 +530,48 @@
     },
     {
       "userId": 1,
-      "cardId": 5,
-      "picture": "https://orlando-parenting.com/wp-content/uploads/2023/05/Trampoline-park.jpg",
-      "date": "March 15, 2024",
+      "cardId": 17,
+      "picture": "https://www.centralpark.com/downloads/10184/download/Museum-of-Natural-History-dinosaur.jpg?cb=eb286dc9eabefb2c8f11329c09a547e9",
+      "date": "March 22, 2024",
       "card": {
-        "id": 5,
-        "typeId": 3,
-        "hours": 2,
+        "id": 17,
+        "typeId": 2,
+        "hours": 1.5,
         "price": 20,
-        "title": "Trampoline Park",
-        "description": "Release your inner child and JUMP."
+        "title": "Museum Exploration",
+        "description": "Spend the afternoon exploring museums and galleries at your own pace."
       },
       "id": 21
+    },
+    {
+      "userId": 6,
+      "cardId": 6,
+      "picture": "https://i0.wp.com/centuryballroom.com/wp-content/uploads/2024/01/West-hall-dance.-tower-of-power.jpg?fit=1024%2C683&ssl=1",
+      "date": "March 19, 2024",
+      "card": {
+        "id": 6,
+        "typeId": 1,
+        "hours": 3,
+        "price": 50,
+        "title": "Dance the night away",
+        "description": "Sign up for a dance class and show your partner your moves."
+      },
+      "id": 22
+    },
+    {
+      "userId": 6,
+      "cardId": 18,
+      "picture": "https://assets.mobilebaymag.com/uploads/2020/10/game-night.jpg",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 18,
+        "typeId": 3,
+        "hours": 3.5,
+        "price": 40,
+        "title": "Game Night",
+        "description": "Host a game night with board games, card games, and snacks."
+      },
+      "id": 23
     }
   ],
   "favorites": [
@@ -673,6 +694,21 @@
       "userId": 1,
       "cardId": 30,
       "id": 46
+    },
+    {
+      "userId": 1,
+      "cardId": 17,
+      "id": 47
+    },
+    {
+      "userId": 6,
+      "cardId": 6,
+      "id": 48
+    },
+    {
+      "userId": 6,
+      "cardId": 18,
+      "id": 50
     }
   ]
 }
