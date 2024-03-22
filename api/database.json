@@ -3,7 +3,7 @@
     {
       "id": 1,
       "email": "kelseymcnutt@comcast.net",
-      "username": "kelseymcnutt",
+      "username": "kelseymcnutty",
       "profilePic": "https://images.squarespace-cdn.com/content/v1/624da83e75ca872f189ffa42/1651685443937-OCK49KC9UCLJTX4VFD5N/Floral%2BStudio%2BDisco%2BBall%2B8x10.jpg?format=1500w"
     },
     {
@@ -19,10 +19,10 @@
       "profilePic": "https://live.staticflickr.com/4026/4462293597_885f0c1f1d_b.jpg"
     },
     {
+      "id": 4,
       "email": "tomtom@tom.com",
       "username": "tommycat",
-      "profilePic": "https://us.feliway.com/cdn/shop/articles/10_fascinating_facts_about_black_cats-3.jpg?v=1667409596",
-      "id": 4
+      "profilePic": "https://us.feliway.com/cdn/shop/articles/10_fascinating_facts_about_black_cats-3.jpg?v=1667409596"
     },
     {
       "email": "bellebelle@belle.com",
@@ -293,16 +293,9 @@
   "posts": [
     {
       "id": 1,
-      "date": "March 15, 2024",
+      "date": "March 16, 2024",
       "picture": "https://live.staticflickr.com/65535/49886357618_b0e576c187_c.jpg",
       "cardId": 2,
-      "userId": 1
-    },
-    {
-      "id": 2,
-      "date": "March 7, 2024",
-      "picture": "https://cms.accuweather.com/wp-content/uploads/2017/05/sunset.jpg?w=1024",
-      "cardId": "2",
       "userId": 1
     },
     {
@@ -310,13 +303,6 @@
       "date": "March 19, 2024",
       "picture": "https://hips.hearstapps.com/hmg-prod/images/stocksy-txp7516161ajch100-medium-1181867-1508525551.jpg",
       "cardId": 3,
-      "userId": 1
-    },
-    {
-      "id": 4,
-      "date": "March 21, 2024",
-      "picture": "https://cdn11.bigcommerce.com/s-gyhhtwx4/images/stencil/1280x1280/uploaded_images/buffalogames-105.jpg?t=1651271108",
-      "cardId": 11,
       "userId": 1
     },
     {
@@ -468,6 +454,103 @@
         "description": "Sit accross from each other with a glass of wine and paint portraits of each other."
       },
       "id": 14
+    },
+    {
+      "userId": 4,
+      "cardId": 20,
+      "picture": "https://www.jivahill.com/_novaimg/4953520-1518892_0_416_4800_2298_2200_1053.jpg",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 20,
+        "typeId": 2,
+        "hours": 2.5,
+        "price": 25,
+        "title": "Spa Day",
+        "description": "Treat yourself to a day of relaxation with spa treatments and massages."
+      },
+      "id": 15
+    },
+    {
+      "userId": 4,
+      "cardId": 19,
+      "picture": "https://assets.site-static.com/userFiles/2147/image/Mark/20240117_Franklin_TN_Outdoor_Adventures_Great_Hiking_Trails_Nearby/Best_Time_to_Visit_Franklin_for_Hiking.jpg",
+      "date": "March 22, 2024",
+      "card": {
+        "id": 19,
+        "typeId": 1,
+        "hours": 2,
+        "price": 30,
+        "title": "Hiking Adventure",
+        "description": "Embark on a scenic hike together and enjoy nature's beauty."
+      },
+      "id": 16
+    },
+    {
+      "id": 17,
+      "date": "March 22, 2024",
+      "picture": "https://i.insider.com/60df54bc4a93e20019129b92?width=700",
+      "cardId": 4,
+      "userId": 4
+    },
+    {
+      "userId": 1,
+      "cardId": 30,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuD5bdq2uuqHHRqvf2jScMdtvq8ROaOIAyPg&usqp=CAU",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 30,
+        "typeId": 1,
+        "hours": 2,
+        "price": 15,
+        "title": "Arcade Night",
+        "description": "Go to an arcade and see who can win the better prize."
+      },
+      "id": 18
+    },
+    {
+      "userId": 4,
+      "cardId": 2,
+      "picture": "https://images.unsplash.com/photo-1462216589242-9e3e00a47a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 2,
+        "typeId": 2,
+        "hours": 1.5,
+        "price": 0,
+        "title": "Photography walk",
+        "description": "Go on a scenic walk in nature or through your city and capture interesting sights"
+      },
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "cardId": 14,
+      "picture": "https://images-2.rakuten.tv/storage/snapshot/shot/442fe870-8250-41c7-b063-07b0b8fd45d5-snapshot-1590662809-width936-quality90.jpeg",
+      "date": "March 22, 2024",
+      "card": {
+        "id": 14,
+        "typeId": 2,
+        "hours": 2,
+        "price": 25,
+        "title": "Solo Movie Marathon",
+        "description": "Pick a movie genre and spend the day watching your favorite films."
+      },
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "cardId": 5,
+      "picture": "https://orlando-parenting.com/wp-content/uploads/2023/05/Trampoline-park.jpg",
+      "date": "March 15, 2024",
+      "card": {
+        "id": 5,
+        "typeId": 3,
+        "hours": 2,
+        "price": 20,
+        "title": "Trampoline Park",
+        "description": "Release your inner child and JUMP."
+      },
+      "id": 21
     }
   ],
   "favorites": [
@@ -515,11 +598,6 @@
       "userId": 1,
       "cardId": 12,
       "id": 29
-    },
-    {
-      "userId": 1,
-      "cardId": 11,
-      "id": 30
     },
     {
       "userId": 1,
@@ -575,6 +653,26 @@
       "userId": 5,
       "cardId": 26,
       "id": 42
+    },
+    {
+      "userId": 4,
+      "cardId": 20,
+      "id": 43
+    },
+    {
+      "userId": 4,
+      "cardId": 4,
+      "id": 44
+    },
+    {
+      "userId": 4,
+      "cardId": 19,
+      "id": 45
+    },
+    {
+      "userId": 1,
+      "cardId": 30,
+      "id": 46
     }
   ]
 }
