@@ -26,14 +26,11 @@ export const Favs = ({currentUser}) => {
     }, [])
 
     
-    const handleDelete = (event) => {
-        if (currentUser){
-        deleteFavorite(event.target.value)
-        getFavoritesByUserId(currentUser.id).then((FavsArray) => {
+    const handleDelete = async (favoriteId) => {
+        await deleteFavorite(favoriteId)
+        console.log(favoriteId)
+        const FavsArray = await getFavoritesByUserId(currentUser.id)
         setAllFavs(FavsArray)   
-        
-        })
-    }
         
     }
     
@@ -70,11 +67,11 @@ export const Favs = ({currentUser}) => {
                 
                 return (
                     
-                    <div className="card" key={fav.card.id} style={{backgroundImage}}>
+                    <div className="card" key={fav.id} style={{backgroundImage}}>
                         
                     <div className="fav-top">
                         <div className="card-type">{favCardType}</div>
-                        <button  value={fav.id} onClick={handleDelete}><IoTrash /></button>
+                        <button value={fav.id} onClick={ () => handleDelete(fav.id)}><IoTrash /></button>
                     </div>
 
                     <div className="card-title"><h3>{fav.card.title}</h3></div>
