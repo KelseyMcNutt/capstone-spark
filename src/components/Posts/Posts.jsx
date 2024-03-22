@@ -17,7 +17,7 @@ export const Posts = () => {
     return(
         <>
         <div className="Posts">
-        {allPosts.map((post)=> {
+        {allPosts.slice().reverse().map((post)=> {
             return(
              <div className="post" key={post.id}>
                 <header>
