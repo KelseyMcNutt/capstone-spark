@@ -29,12 +29,18 @@
   .cards {
     margin-right: 40px;
     margin-left: 40px;
+    font-size: 20px;
+  }
+
+  .posts {
+    font-size: 20px;
   }
 
   .logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     font-family: "Major Mono Display", monospace;
     font-weight: 400;
     font-style: normal;
@@ -49,3 +55,6 @@
     margin-right: 40px;
   }
   
+  .logo-pic {
+    width: 60px;
+  }

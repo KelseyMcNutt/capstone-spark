@@ -19,7 +19,7 @@ export const Posts = () => {
         <div className="Posts">
         {allPosts.map((post)=> {
             return(
-             <div className="post">
+             <div className="post" key={post.id}>
                 <header>
                     <div className="profilePicPost">
                     <img src={post.user.profilePic} alt="profilePicture" className="profilePicture" />

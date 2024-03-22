@@ -58,16 +58,17 @@ useEffect(() => {
 
   return (
     <>
-    <Link to="/profile"><div><FaArrowLeft /></div></Link>
+    <Link to="/profile"><div className="arrow"><FaArrowLeft /></div></Link>
     <div className="new-post-form">
       
       <div className="form">
         <form onSubmit={handleSubmit}>
             <div>
-            <label htmlFor="cardId">Card Title:</label>
+            <label htmlFor="cardId">Card Title: </label>
             <select
                 id="cardId"
                 name="cardId"
+                className="new-card"
                 value={formData.cardId}
                 onChange={handleChange}
                 required
@@ -81,22 +82,24 @@ useEffect(() => {
             </select>
             </div>
             <div>
-            <label htmlFor="pictureUrl">Picture URL:</label>
+            <label htmlFor="pictureUrl">Picture URL: </label>
             <input
                 type="text"
                 id="pictureUrl"
                 name="picture"
+                className="new-pic"
                 value={formData.picture}
                 onChange={handleChange}
                 required
             />
             </div>
             <div>
-            <label htmlFor="date">Date:</label>
+            <label htmlFor="date">Date: </label>
             <input
                 type="text"
                 id="date"
                 name="date"
+                className="new-date"
                 value={formData.date}
                 onChange={handleChange}
                 required

@@ -6,6 +6,7 @@
 .new-post-form {
     display: flex;
     align-items: center;
+    height: 700px;
 }
 
 .form {
@@ -14,4 +15,20 @@
 
 .prev {
     margin-left: 10px;
+}
+
+.arrow{
+    color:black;
+}
+
+.new-card {
+    margin-bottom: 30px;
+}
+
+.new-pic {
+    margin-bottom: 30px ;
+}
+
+.new-date {
+    margin-bottom: 30px;
 }

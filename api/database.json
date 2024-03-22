@@ -23,6 +23,12 @@
       "username": "tommycat",
       "profilePic": "https://us.feliway.com/cdn/shop/articles/10_fascinating_facts_about_black_cats-3.jpg?v=1667409596",
       "id": 4
+    },
+    {
+      "email": "bellebelle@belle.com",
+      "username": "bellebelle",
+      "profilePic": "https://www.cascadefloralwholesale.com/wp-content/uploads/2022/01/pink-carnation-flower-1024x1024.jpg",
+      "id": 5
     }
   ],
   "cards": [
@@ -327,6 +333,141 @@
         "description": "Go to a rock climbing gym near you and challenge yourself to the hardest wall."
       },
       "id": 5
+    },
+    {
+      "userId": 1,
+      "cardId": 15,
+      "picture": "https://visitrockawaybeach.org/wp-content/uploads/2016/12/rockaway-beach-bonfire-1.jpg",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 15,
+        "typeId": 3,
+        "hours": 4,
+        "price": 50,
+        "title": "Beach Bonfire",
+        "description": "Gather your friends for a bonfire on the beach with s'mores and storytelling."
+      },
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "cardId": 9,
+      "picture": "https://images.squarespace-cdn.com/content/v1/629eb6f95a08bc4d6d32abff/c3fe8c38-fae8-4e79-b99d-628ce1791853/goatyoga-23.jpg",
+      "date": "March 22, 2024",
+      "card": {
+        "id": 9,
+        "typeId": 3,
+        "hours": 1.5,
+        "price": 15,
+        "title": "Goat Yoga",
+        "description": "Spend a morning grounding yourselves and hanging out with some goats."
+      },
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "cardId": 13,
+      "picture": "https://assets.experiencescottsdale.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/scottsdale/TWC_2427_e0f80e96-f03b-4c55-aef9-245dd385ba1f.jpg",
+      "date": "March 23, 2024",
+      "card": {
+        "id": 13,
+        "typeId": 1,
+        "hours": 2.5,
+        "price": 35,
+        "title": "Wine Tasting",
+        "description": "Visit local wineries and enjoy a tasting flight together."
+      },
+      "id": 8
+    },
+    {
+      "userId": 5,
+      "cardId": 22,
+      "picture": "https://media.post.rvohealth.io/wp-content/uploads/2020/08/766x415_THUMBNAIL_How_Couples_Yoga_Will_Strengthen_Your_Relationship.jpg",
+      "date": "March 23, 2024",
+      "card": {
+        "id": 22,
+        "typeId": 1,
+        "hours": 3,
+        "price": 35,
+        "title": "Couples Yoga",
+        "description": "Attend a couples yoga class together for relaxation and bonding."
+      },
+      "id": 9
+    },
+    {
+      "userId": 5,
+      "cardId": 30,
+      "picture": "https://images.squarespace-cdn.com/content/v1/5a8a22c59f8dce86ccc25373/1664507643739-KDQXDM3VVU7LTWCQRKW5/AM+LKM+Opening-29.jpg",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 30,
+        "typeId": 1,
+        "hours": 2,
+        "price": 15,
+        "title": "Arcade Night",
+        "description": "Go to an arcade and see who can win the better prize."
+      },
+      "id": 10
+    },
+    {
+      "userId": 5,
+      "cardId": 26,
+      "picture": "https://media.istockphoto.com/id/1129874863/photo/books-on-display-in-the-corner-of-a-second-hand-bookstore.jpg?s=612x612&w=0&k=20&c=ez0PTZuEp8Vn5SFMSxOVggudvgsHFKsFKlAwObaXkuI=",
+      "date": "March 23, 2024",
+      "card": {
+        "id": 26,
+        "typeId": 2,
+        "hours": 1.5,
+        "price": 20,
+        "title": "Bookstore Exploration",
+        "description": "Explore local bookstores and discover new reads."
+      },
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "cardId": 5,
+      "picture": "https://gravityextremezone.com/wp-content/plugins/gz//tramp/assets/images/hero-bg.jpeg",
+      "date": "March 20, 2024",
+      "card": {
+        "id": 5,
+        "typeId": 3,
+        "hours": 2,
+        "price": 20,
+        "title": "Trampoline Park",
+        "description": "Release your inner child and JUMP."
+      },
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "cardId": 8,
+      "picture": "https://6amcity.brightspotcdn.com/dims4/default/e212a50/2147483647/strip/false/crop/1080x1080+0+0/resize/1080x1080!/quality/90/?url=https%3A%2F%2Fk1-prod-sixam-city.s3.us-east-2.amazonaws.com%2Fbrightspot%2F9a%2Fe3%2F2329b1c3444ca2cf584418ea064b%2F365421004-1316196375973725-5862493022584377715-n.jpg",
+      "date": "March 22, 2024",
+      "card": {
+        "id": 8,
+        "typeId": 1,
+        "hours": 1,
+        "price": 15,
+        "title": "Thrift Fit",
+        "description": "Go to a thrift store and pick an outift for eachother to wear to dinner."
+      },
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "cardId": 1,
+      "picture": "https://media.timeout.com/images/105806129/750/562/image.jpg",
+      "date": "March 23, 2024",
+      "card": {
+        "id": 1,
+        "typeId": 1,
+        "hours": 2,
+        "price": 30,
+        "title": "Paint and Sip",
+        "description": "Sit accross from each other with a glass of wine and paint portraits of each other."
+      },
+      "id": 14
     }
   ],
   "favorites": [
@@ -352,11 +493,6 @@
     },
     {
       "userId": 2,
-      "cardId": 3,
-      "id": 15
-    },
-    {
-      "userId": 2,
       "cardId": 8,
       "id": 16
     },
@@ -372,33 +508,73 @@
     },
     {
       "userId": 1,
-      "cardId": 2,
-      "id": 20
-    },
-    {
-      "userId": 1,
-      "cardId": 7,
-      "id": 21
-    },
-    {
-      "userId": 1,
-      "cardId": 11,
-      "id": 24
-    },
-    {
-      "userId": 1,
-      "cardId": 13,
-      "id": 27
-    },
-    {
-      "userId": 1,
-      "cardId": 8,
+      "cardId": 10,
       "id": 28
     },
     {
       "userId": 1,
-      "cardId": 16,
+      "cardId": 12,
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "cardId": 11,
       "id": 30
+    },
+    {
+      "userId": 1,
+      "cardId": 14,
+      "id": 32
+    },
+    {
+      "userId": 1,
+      "cardId": 16,
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "cardId": 15,
+      "id": 34
+    },
+    {
+      "userId": 1,
+      "cardId": 2,
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "cardId": 1,
+      "id": 36
+    },
+    {
+      "userId": 1,
+      "cardId": 5,
+      "id": 37
+    },
+    {
+      "userId": 5,
+      "cardId": 9,
+      "id": 38
+    },
+    {
+      "userId": 5,
+      "cardId": 13,
+      "id": 39
+    },
+    {
+      "userId": 5,
+      "cardId": 22,
+      "id": 40
+    },
+    {
+      "userId": 5,
+      "cardId": 30,
+      "id": 41
+    },
+    {
+      "userId": 5,
+      "cardId": 26,
+      "id": 42
     }
   ]
 }
