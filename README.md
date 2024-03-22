@@ -20,25 +20,25 @@ Social media companies want to addict you and keep your eyes on the screen for a
 
 ### Essential Structure
 
-###### All Cards
+##### All Cards
 - Users can browse through date cards, filter and favorite them.
 
-###### All Posts 
+##### All Posts 
 - Users can browse through all users' posts.
 
-###### Profile Page
+##### Profile Page
 - Users can view their own profile.
 
-###### Edit Profile
+##### Edit Profile
 - Users can edit their profile information.
 
-###### Post Details
+##### Post Details
 - Users can edit their own post.'
 
-###### Favorites
+##### Favorites
 - Users can look through their favorite date cards.
 
-###### New Post
+##### New Post
 - Users can create a new post.
 
 
