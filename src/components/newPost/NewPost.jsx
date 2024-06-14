@@ -49,8 +49,9 @@ useEffect(() => {
 
       <div className="post">
       <h3>{formData.card?.title}</h3>
-      <p>{formData.card?.description}</p>
+      
         <img src={formData.picture} alt="Post" className="picture-preview" />
+        <p>{formData.card?.description}</p>
         <p>Date: {formData.date}</p>
       </div>
     </div>
@@ -105,7 +106,7 @@ useEffect(() => {
                 required
             />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Post</button>
         </form>
       </div>
       <div className="prev">
