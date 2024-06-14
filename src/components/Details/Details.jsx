@@ -23,9 +23,9 @@ export const Details = () => {
         });
     }, [postId]);
 
-    const handleDelete = (event) => {
-        deletePost(event.target.value)
-        navigate('/profile')
+    const handleDelete = async (event, postId) => {
+        await deletePost(postId)
+        navigate('/profile')  
     }
 
     const handleSubmit = (event) => {
@@ -53,7 +53,7 @@ export const Details = () => {
         <div className="container">
        <div className="post-details">
             <>
-                <button value={details.id} onClick={handleDelete}><IoTrash /></button>
+                <button value={details.id} onClick={(event) => handleDelete(event, postId)}><IoTrash /></button>
                 <div className="title">{details.card?.title}</div>
                 <img src={details.picture} alt="Post" className="picture" />
                 <div className="description">{details.card?.description}</div>

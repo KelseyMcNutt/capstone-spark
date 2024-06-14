@@ -47,7 +47,7 @@ export const ProfilePage = ({currentUser}) => {
             </div>
        </header>
             <div className="Posts">
-            {userPosts.map((posts) => {
+            {userPosts.slice().reverse().map((posts) => {
                 return(
             <div key={posts.id}>
             <Link to={`/profile/${posts.id}`}>
