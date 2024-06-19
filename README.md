@@ -15,6 +15,7 @@ Social media companies want to addict you and keep your eyes on the screen for a
 
 - clone down the repository
 - npm install
+- cd api
 - json-server database.json -p 8000
 - npm run dev
 
